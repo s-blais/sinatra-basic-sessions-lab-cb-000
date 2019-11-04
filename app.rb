@@ -1,8 +1,5 @@
 require_relative 'config/environment'
 
-# is this where this belongs? or inside App?
-
-
 class App < Sinatra::Base
 
   configure do
