@@ -1,12 +1,14 @@
 require_relative 'config/environment'
 
 # is this where this belongs? or inside App?
-configure do
-  enable :sessions
-  set :session_secret, "chickabean"
-end
+
 
 class App < Sinatra::Base
+
+  configure do
+    enable :sessions
+    set :session_secret, "chickabean"
+  end
 
   get '/' do
     erb :index
